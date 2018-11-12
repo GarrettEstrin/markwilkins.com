@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Aileron, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Aileron";
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Aileron-Light";
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-Light.ttf") format("woff2");
+}
