@@ -9,11 +9,11 @@
           <span class="bar"></span>
         </li>
         <div class="nav__links">
-          <li class="nav__item" data-link="jsHome">Home</li>
-          <li class="nav__item" data-link="jsAbout">About</li>
-          <li class="nav__item" data-link="jsProjects">Projects</li>
-          <li class="nav__item" data-link="jsContact">Contact</li>
-          <li class="nav__item" data-link="jsFriends">Friends</li>
+          <li class="nav__item" data-link="1">Home</li>
+          <li class="nav__item" data-link="2">About</li>
+          <li class="nav__item" data-link="3">Projects</li>
+          <li class="nav__item" data-link="4">Contact</li>
+          <li class="nav__item" data-link="5">Friends</li>
         </div>
       </ul>
     </div>
@@ -32,9 +32,7 @@
   })
   $('.nav__item').on('click', function(){
     if(this.dataset.link !== undefined){
-      $('html, body').animate({
-        scrollTop: $("#" + this.dataset.link).offset().top
-    }, 1000);
+      $.scrollify.move(this.dataset.link - 1);
     }
   })
 </script>

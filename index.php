@@ -10,6 +10,7 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
+  <script src="/dist/assets/js/scrollify.js"></script>
 </head>
 <body>
   <div class="mainbag">
@@ -20,6 +21,25 @@
     <?php include 'parts/contact.php' ?>
     <?php include 'parts/friends.php' ?>
   </div>
-
+<script>
+      $.scrollify({
+        section : ".section",
+        // sectionName : "section-name",
+        // interstitialSection : "",
+        easing: "easeOutExpo",
+        scrollSpeed: 500,
+        offset : 0,
+        scrollbars: false,
+        standardScrollElements: "",
+        setHeights: false,
+        overflowScroll: true,
+        updateHash: true,
+        touchScroll:true,
+        before:function() {},
+        after:function() {},
+        afterResize:function() {},
+        afterRender:function() {}
+      });
+</script>
 </body>
 </html>
