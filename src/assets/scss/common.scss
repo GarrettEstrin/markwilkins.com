@@ -19,3 +19,19 @@ body {
   font-family: "Aileron-Light";
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Light.ttf") format("woff2");
 }
+
+.section {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.section--black {
+  background-color: #000;
+  color: #fff;
+}

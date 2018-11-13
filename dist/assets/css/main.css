@@ -15,10 +15,25 @@ body {
 @font-face {
   font-family: "Aileron-Light";
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Light.ttf") format("woff2"); }
-.nav {
-  position: absolute;
+.section {
+  height: 100vh;
   width: 100%;
-  z-index: 100; }
+  box-sizing: border-box; }
+
+.section--white {
+  background-color: #fff;
+  color: #000; }
+
+.section--black {
+  background-color: #000;
+  color: #fff; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  color: #fff;
+  mix-blend-mode: difference; }
   .nav__flex {
     padding: 0 10%;
     display: flex; }
@@ -26,17 +41,26 @@ body {
     font-size: 1em;
     margin: 10% 0; }
   .nav__bar {
-    margin: 85px 0 0 auto;
+    margin: 10% 0 0 auto;
     list-style: none; }
+  .nav__bar--open .nav__links {
+    opacity: 1;
+    transition: .5s; }
+  .nav__links {
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s; }
   .nav__item {
     text-align: right;
     line-height: 2;
-    font-family: Aileron-Light, Arial, sans-serif; }
+    font-family: Aileron-Light, Arial, sans-serif;
+    cursor: pointer; }
   .nav__item--x {
     width: 30px;
     height: 30px;
     position: relative;
-    margin-left: auto; }
+    margin-left: auto;
+    cursor: pointer; }
   .nav__item--x.open span.bar:nth-child(1) {
     top: 5px;
     -webkit-transform: rotate(135deg);
@@ -67,7 +91,8 @@ body {
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out; }
+    transition: .25s ease-in-out;
+    background-color: #fff; }
   .nav span.bar:nth-child(1) {
     top: 0; }
   .nav span.bar:nth-child(2) {
@@ -75,21 +100,7 @@ body {
   .nav span.bar:nth-child(3) {
     top: 20px; }
 
-.nav--white {
-  color: #fff; }
-  .nav--white span.bar {
-    background-color: #fff; }
-
-.nav--black {
-  color: #000; }
-  .nav--black span.bar {
-    background-color: #000; }
-
 .hero {
-  background-color: #000;
-  color: #fff;
-  height: 100vh;
-  width: 100%;
   padding: 50px 0 0; }
   .hero__video {
     width: 100%; }
