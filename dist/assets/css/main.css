@@ -2,12 +2,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Aileron, Arial, sans-serif; }
+  font-family: Aileron, Arial, sans-serif;
+  font-size: 16px; }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box; }
 
 @font-face {
   font-family: "Aileron";
@@ -15,6 +18,9 @@ body {
 @font-face {
   font-family: "Aileron-Light";
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Light.ttf") format("woff2"); }
+@font-face {
+  font-family: "Aileron-Black";
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-Black.ttf") format("woff2"); }
 .section {
   height: 100vh;
   width: 100%;
@@ -35,11 +41,11 @@ body {
   color: #fff;
   mix-blend-mode: difference; }
   .nav__flex {
-    padding: 0 10%;
     display: flex; }
   .nav__title {
-    font-size: 1em;
-    margin: 10% 0; }
+    font-size: 32px;
+    margin: 10% 0;
+    font-family: "Aileron-Black"; }
   .nav__bar {
     margin: 10% 0 0 auto;
     list-style: none; }
@@ -52,7 +58,7 @@ body {
     transition: .5s; }
   .nav__item {
     text-align: right;
-    line-height: 2;
+    line-height: 2.3;
     font-family: Aileron-Light, Arial, sans-serif;
     cursor: pointer; }
   .nav__item--x {
@@ -102,7 +108,14 @@ body {
 
 .hero {
   padding: 50px 0 0; }
-  .hero__video {
-    width: 100%; }
+  .hero__title {
+    padding: 100px 10px;
+    font-size: 7vw;
+    font-family: "Aileron-Black"; }
+
+@media (max-width: 425px) {
+  .hero__title {
+    font-size: 13vw;
+    padding: 160px 10px; } }
 
 /*# sourceMappingURL=main.css.map */

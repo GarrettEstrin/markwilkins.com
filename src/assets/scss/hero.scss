@@ -1,7 +1,19 @@
 .hero {
   padding: 50px 0 0;
-  // .hero__video
-  &__video {
-    width: 100%;
+  // .hero__title
+  &__title {
+    padding: 100px 10px;
+    font-size: 7vw;
+    font-family: "Aileron-Black";
+  }
+} 
+
+@media (max-width: 425px){
+  .hero {
+    // .hero__title 
+    &__title {
+      font-size: 13vw;
+      padding: 160px 10px;
+    }
   }
 }
