@@ -1,0 +1,15 @@
+.about {
+  padding: 15vh 0;
+  .container {
+    display: flex;
+    padding: 0 11% 0 5%;
+  }
+  // .about__content--cont
+  &__content--cont {
+
+  }
+  // .about__text
+  &__text {
+    padding: 4% 20px 0 0;
+  }
+}

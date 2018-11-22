@@ -41,13 +41,15 @@ body {
   color: #fff;
   mix-blend-mode: difference; }
   .nav__flex {
-    display: flex; }
+    display: flex;
+    margin: 10vh 0; }
   .nav__title {
     font-size: 32px;
-    margin: 10% 0;
-    font-family: "Aileron-Black"; }
+    margin: 0;
+    line-height: 0.6;
+    font-family: Aileron-Black; }
   .nav__bar {
-    margin: 10% 0 0 auto;
+    margin: 0 0 0 auto;
     list-style: none; }
   .nav__bar--open .nav__links {
     opacity: 1;
@@ -123,5 +125,12 @@ body {
 @media (min-width: 1200px) {
   .hero__title {
     font-size: 85px; } }
+.about {
+  padding: 15vh 0; }
+  .about .container {
+    display: flex;
+    padding: 0 11% 0 5%; }
+  .about__text {
+    padding: 4% 20px 0 0; }
 
 /*# sourceMappingURL=main.css.map */

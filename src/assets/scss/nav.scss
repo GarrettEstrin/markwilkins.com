@@ -7,16 +7,18 @@
   // .nav__flex 
   &__flex {
     display: flex;
+    margin: 10vh 0;
   }
   // .nav__title 
   &__title {
     font-size: 32px;
-    margin: 10% 0;
-    font-family: "Aileron-Black";
+    margin: 0;
+    line-height: 0.6;
+    font-family: Aileron-Black;
   }
   // .nav__bar 
   &__bar {
-    margin: 10% 0 0 auto;
+    margin: 0 0 0 auto;
     list-style: none;
   }
   // .nav__bar--open 
