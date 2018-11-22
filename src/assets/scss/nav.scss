@@ -97,3 +97,12 @@
     top: 20px;
   }
 }
+
+@media (max-width: 425px){
+  .nav {
+    // .nav__title 
+    &__title {
+      font-size: 25px;
+    }
+  }
+}

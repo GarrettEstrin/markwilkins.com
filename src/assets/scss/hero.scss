@@ -17,3 +17,12 @@
     }
   }
 }
+
+@media (min-width: 1200px){
+  .hero {
+    // .hero__title
+    &__title {
+      font-size: 85px;
+    }
+  }
+}

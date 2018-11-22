@@ -106,6 +106,9 @@ body {
   .nav span.bar:nth-child(3) {
     top: 20px; }
 
+@media (max-width: 425px) {
+  .nav__title {
+    font-size: 25px; } }
 .hero {
   padding: 50px 0 0; }
   .hero__title {
@@ -117,5 +120,8 @@ body {
   .hero__title {
     font-size: 13vw;
     padding: 160px 10px; } }
+@media (min-width: 1200px) {
+  .hero__title {
+    font-size: 85px; } }
 
 /*# sourceMappingURL=main.css.map */
