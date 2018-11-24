@@ -129,8 +129,25 @@ body {
   padding: 15vh 0; }
   .about .container {
     display: flex;
-    padding: 0 11% 0 5%; }
+    padding: 0 8% 0 5%; }
+  .about__content--cont {
+    width: 50%; }
+    .about__content--cont img {
+      width: 89%; }
   .about__text {
     padding: 4% 20px 0 0; }
+
+@media (max-width: 425px) {
+  .about .container {
+    padding: 0 16% 0 5%;
+    flex-direction: column; }
+  .about__content--cont {
+    width: 100%; }
+    .about__content--cont img {
+      width: 89%; }
+  .about__content--cont:first-child {
+    order: 2; }
+  .about__content--cont:last-child {
+    order: 1; } }
 
 /*# sourceMappingURL=main.css.map */
