@@ -21,6 +21,12 @@ body {
 @font-face {
   font-family: "Aileron-Black";
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Black.ttf") format("woff2"); }
+@font-face {
+  font-family: 'Aileron-Thin';
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-Thin.ttf") format("woff2"); }
+@font-face {
+  font-family: 'Aileron-UltraLight';
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-UltraLight.ttf") format("woff2"); }
 .section {
   height: 100vh;
   width: 100%;
@@ -114,22 +120,35 @@ body {
 .hero {
   padding: 50px 0 0; }
   .hero__title {
-    padding: 100px 10px;
+    padding: 100px 10px 0 10px;
     font-size: 7vw;
-    font-family: "Aileron-Black"; }
+    font-family: Aileron-Black;
+    line-height: 1;
+    margin: 135px 0 0; }
+  .hero__subtitle {
+    padding: 0 10px;
+    font-size: 35px;
+    font-family: Aileron-UltraLight;
+    margin: 10px 0; }
 
 @media (max-width: 425px) {
   .hero__title {
     font-size: 13vw;
-    padding: 160px 10px; } }
+    padding: 160px 10px 0; }
+  .hero__subtitle {
+    font-size: 7vw; } }
 @media (min-width: 1200px) {
   .hero__title {
-    font-size: 85px; } }
+    font-size: 85px; }
+  .hero__subtitle {
+    font-size: 35px; } }
 .about {
   padding: 15vh 0; }
   .about .container {
     display: flex;
     padding: 0 11% 0 5%; }
+  .about__content--cont {
+    width: 50%; }
   .about__text {
     padding: 4% 20px 0 0; }
 
