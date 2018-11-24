@@ -1,6 +1,7 @@
 <section class="hero section section--black mainview" id="jsHome" vs-anchor="jsHome">
   <div class="container">
     <p class="hero__title" id="jsTitle">Content Producer</p>
+    <p class="hero__subtitle">Empower. Create. Cultivate.</p>
   </div>
 </section>
 

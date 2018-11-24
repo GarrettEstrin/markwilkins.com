@@ -28,6 +28,16 @@ body {
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Black.ttf") format("woff2");
 }
 
+@font-face {
+  font-family: 'Aileron-Thin';
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-Thin.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: 'Aileron-UltraLight';
+  src: url("../../../dist/assets/fonts/Aileron/Aileron-UltraLight.ttf") format("woff2");
+}
+
 .section {
   height: 100vh;
   width: 100%;
