@@ -262,4 +262,19 @@ body {
   margin-top: 30px;
   padding: 5px; }
 
+.friends .container {
+  padding: 14vh 11% 0 5%; }
+.friends .friends__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+.friends__img {
+  width: 30%; }
+
+@media (max-width: 425px) {
+  .friends .container {
+    padding: 14vh 19% 0 5%; }
+  .friends__img {
+    width: 50%; } }
+
 /*# sourceMappingURL=main.css.map */

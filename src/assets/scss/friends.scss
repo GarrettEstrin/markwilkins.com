@@ -1,0 +1,26 @@
+.friends {
+  .container {
+    padding: 14vh 11% 0 5%;
+  }
+  .friends__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  // .friends__img
+  &__img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 425px){
+  .friends {
+    .container {
+      padding: 14vh 19% 0 5%;
+    }
+    // .friends__img
+    &__img {
+      width: 50%;
+    }
+  }
+}

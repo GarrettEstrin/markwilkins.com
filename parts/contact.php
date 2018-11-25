@@ -21,7 +21,6 @@
             url: 'submitForm.php',
             data: $('form').serialize(),
             success: function (data) {
-              console.log(data);
               if(data == "1"){
                 $('form').hide();
                 $('#jsError').hide();
