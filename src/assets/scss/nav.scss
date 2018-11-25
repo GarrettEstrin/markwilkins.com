@@ -7,7 +7,8 @@
   // .nav__flex 
   &__flex {
     display: flex;
-    margin: 10vh 0;
+    margin: 10vh 0 0 0;
+    position: relative;
   }
   // .nav__title 
   &__title {
@@ -20,6 +21,8 @@
   &__bar {
     margin: 0 0 0 auto;
     list-style: none;
+    position: absolute;
+    right: 0;
   }
   // .nav__bar--open 
   &__bar--open {
