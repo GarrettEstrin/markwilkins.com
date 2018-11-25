@@ -264,17 +264,25 @@ body {
 
 .friends .container {
   padding: 14vh 11% 0 5%; }
-.friends .friends__flex {
+.friends__title {
+  font-family: Aileron-Ultralight;
+  font-size: 30px;
+  margin-bottom: 30px; }
+.friends__flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
 .friends__img {
-  width: 30%; }
+  width: 33.333%;
+  border-top: 1px solid #ffffff9c;
+  box-sizing: border-box;
+  padding: 0 4%; }
 
 @media (max-width: 425px) {
   .friends .container {
     padding: 14vh 19% 0 5%; }
   .friends__img {
-    width: 50%; } }
+    width: 50%;
+    height: 15vh; } }
 
 /*# sourceMappingURL=main.css.map */

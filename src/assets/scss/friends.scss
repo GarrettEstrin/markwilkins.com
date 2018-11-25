@@ -2,14 +2,24 @@
   .container {
     padding: 14vh 11% 0 5%;
   }
-  .friends__flex {
+  // .friends__title
+  &__title {
+    font-family: Aileron-Ultralight;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  // .friends__flex 
+  &__flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   // .friends__img
   &__img {
-    width: 30%;
+    width: 33.333%;
+    border-top: 1px solid #ffffff9c;
+    box-sizing: border-box;
+    padding: 0 4%;
   }
 }
 
@@ -21,6 +31,7 @@
     // .friends__img
     &__img {
       width: 50%;
+      height: 15vh;
     }
   }
 }
