@@ -232,5 +232,34 @@ body {
     margin: 5px 0; }
   .projects .project__cont--mobile {
     display: none; } }
+.contact .container {
+  padding: 14vh 11% 0 5%; }
+.contact__title {
+  font-family: Aileron-Light; }
+.contact__textarea {
+  width: 100%;
+  margin-top: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 5px; }
+.contact__send {
+  text-align: right;
+  font-family: Aileron-Black;
+  color: #aea6a6;
+  cursor: pointer; }
+.contact__error {
+  font-size: 30px;
+  color: #ff000066;
+  line-height: 1;
+  margin: 0; }
+.contact__success {
+  display: none;
+  width: 75%;
+  font-size: 30px; }
+.contact input {
+  width: 75%;
+  box-sizing: border-box;
+  margin-top: 30px;
+  padding: 5px; }
 
 /*# sourceMappingURL=main.css.map */
