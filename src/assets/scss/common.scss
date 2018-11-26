@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
 }
 
+.hidden {
+  display: none!important;
+}
+
 @font-face {
   font-family: "Aileron";
   src: url("../../../dist/assets/fonts/Aileron/Aileron-Regular.ttf") format("woff2");
