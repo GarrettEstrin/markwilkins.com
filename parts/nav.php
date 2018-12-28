@@ -21,20 +21,23 @@
 </section>
 <script>
   let close = document.getElementById('jsClose');
-  close.addEventListener('click', function(){
-    if(this.classList.contains('open')){
-      this.classList.remove('open');
-      this.parentElement.classList.remove('nav__bar--open');
+  function toggleMenu(el){
+    if(el.classList.contains('open')){
+      el.classList.remove('open');
+      el.parentElement.classList.remove('nav__bar--open');
       setTimeout(() => {
         $('#jsNavLinks').addClass('hidden');
       }, 500);
     } else {
       $('#jsNavLinks').removeClass('hidden');
-      this.classList.add('open');
+      el.classList.add('open');
       setTimeout(() => {
-        this.parentElement.classList.add('nav__bar--open');
+        el.parentElement.classList.add('nav__bar--open');
       }, 100);
     }
+  }
+  close.addEventListener('click', function(){
+    toggleMenu(this);
   })
   $('.nav__item').on('click', function(){
     if(this.dataset.link !== undefined){

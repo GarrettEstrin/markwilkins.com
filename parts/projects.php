@@ -20,10 +20,19 @@
     </div>
   </div>
   <script>
+    function closeMenu(el){
+      el.classList.remove('open');
+        el.parentElement.classList.remove('nav__bar--open');
+        setTimeout(() => {
+          $('#jsNavLinks').addClass('hidden');
+        }, 500);
+    }
     function playVideo(el){
       let videoLinkEl = el.dataset.video;
       $('#jsModal').removeClass('hidden');
       $('#jsVideoCont').html(videoLinkEl);
+      let menu = document.getElementById('jsClose');
+      closeMenu(menu);
     }
   </script>
   <?php include 'projects-modal.php'; ?>
