@@ -8,7 +8,7 @@
           <span class="bar"></span>
           <span class="bar"></span>
         </li>
-        <div class="nav__links">
+        <div class="nav__links hidden" id="jsNavLinks">
           <li class="nav__item" data-link="1">Home</li>
           <li class="nav__item" data-link="2">About</li>
           <li class="nav__item" data-link="3">Projects</li>
@@ -25,9 +25,15 @@
     if(this.classList.contains('open')){
       this.classList.remove('open');
       this.parentElement.classList.remove('nav__bar--open');
+      setTimeout(() => {
+        $('#jsNavLinks').addClass('hidden');
+      }, 500);
     } else {
+      $('#jsNavLinks').removeClass('hidden');
       this.classList.add('open');
-      this.parentElement.classList.add('nav__bar--open');
+      setTimeout(() => {
+        this.parentElement.classList.add('nav__bar--open');
+      }, 100);
     }
   })
   $('.nav__item').on('click', function(){
