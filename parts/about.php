@@ -6,7 +6,16 @@
       </p>
     </div>
     <div class="about__content--cont">
-      <img src="/dist/assets/img/2_About/about_photo.jpeg" alt="">
+      <img src="/dist/assets/img/2_About/about_photo.jpeg" alt="" id="jsAboutImg">
     </div>
   </div>
 </section>
+<script>
+  let aboutImg = document.getElementById('jsAboutImg');
+  aboutImg.addEventListener('mouseover', function(){
+    aboutImg.src = '/dist/assets/img/2_About/about_photo.gif';
+  })
+  aboutImg.addEventListener('mouseout', function(){
+    aboutImg.src = '/dist/assets/img/2_About/about_photo.jpeg';
+  })
+</script>
