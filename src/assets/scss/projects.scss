@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     padding: 110px 11% 7% 5%;
+    width: 100%;
   }
   // .projects__cont
   &__cont {
@@ -108,10 +109,12 @@
   // .modal__video-cont
   &__video-cont {
     height: 50vh;
-    width: 90vw;
+    width: 615px;
     border: 1px solid #fff;
     border-radius: 10px;
     margin: 0 auto;
     background-color: white;
+    display: flex;
+    align-items: center;
   }
 }
