@@ -56,7 +56,7 @@ body {
     margin: 10vh 0 0 0;
     position: relative; }
   .nav__title {
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
     line-height: 0.6;
     font-family: Aileron-Black; }
@@ -129,13 +129,13 @@ body {
   padding: 50px 0 0; }
   .hero__title {
     padding: 100px 10px 0 10px;
-    font-size: 7vw;
+    font-size: 60px;
     font-family: Aileron-Black;
     line-height: 1;
     margin: 135px 0 0; }
   .hero__subtitle {
     padding: 0 10px;
-    font-size: 35px;
+    font-size: 22px;
     font-family: Aileron-UltraLight;
     margin: 10px 0; }
 
@@ -145,7 +145,7 @@ body {
     padding: 140px 10px 0; }
   .hero__subtitle {
     font-size: 7vw; } }
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   .hero__title {
     font-size: 13vw;
     padding: 80px 10px 0; }
@@ -162,11 +162,14 @@ body {
     display: flex;
     padding: 0 8% 0 5%; }
   .about__content--cont {
-    width: 50%; }
+    width: 50%;
+    padding: 4% 0 0 0; }
     .about__content--cont img {
-      width: 89%; }
+      width: 89%;
+      padding-left: 35px; }
   .about__text {
-    padding: 4% 20px 0 0; }
+    margin: 0;
+    padding-right: 35px; }
 
 @media (max-width: 425px) {
   .about .container {
@@ -183,11 +186,11 @@ body {
 .projects .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 180px 11% 0 5%; }
+  justify-content: flex-end;
+  padding: 110px 11% 7% 5%; }
 .projects__cont {
-  height: 22vh;
-  width: 48%;
+  height: 200px;
+  width: 380px;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -220,7 +223,7 @@ body {
 
 @media (max-width: 1024px) {
   .projects .container {
-    padding: 180px 12% 0 5%; } }
+    padding: 110px 12% 7% 5%; } }
 @media (max-width: 768px) {
   .projects .container {
     padding: 180px 13% 0 5%; } }
@@ -262,9 +265,10 @@ body {
 .contact .container {
   padding: 14vh 11% 0 5%; }
 .contact__title {
-  font-family: Aileron-Light; }
+  font-family: Aileron-Thin;
+  font-size: 1.55em; }
 .contact__textarea {
-  width: 100%;
+  width: 75%;
   margin-top: 30px;
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -290,7 +294,7 @@ body {
   padding: 5px; }
 
 .friends .container {
-  padding: 14vh 11% 0 5%; }
+  padding: 18vh 11% 0 5%; }
 .friends__title {
   font-family: Aileron-Ultralight;
   font-size: 30px;

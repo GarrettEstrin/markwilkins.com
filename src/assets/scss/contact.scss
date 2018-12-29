@@ -4,11 +4,12 @@
   }
   // .contact__title 
   &__title {
-    font-family: Aileron-Light;
+    font-family: Aileron-Thin;
+    font-size: 1.55em;
   }
   // .contact__textarea
   &__textarea {
-    width: 100%;
+    width: 75%;
     margin-top: 30px;
     border: 1px solid #ccc;
     box-sizing: border-box;

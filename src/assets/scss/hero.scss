@@ -3,7 +3,7 @@
   // .hero__title
   &__title {
     padding: 100px 10px 0 10px;
-    font-size: 7vw;
+    font-size: 60px;
     font-family: Aileron-Black;
     line-height: 1;
     margin: 135px 0 0;
@@ -11,7 +11,7 @@
   // .hero__subtitle
   &__subtitle {
     padding: 0 10px;
-    font-size: 35px;
+    font-size: 22px;
     font-family: Aileron-UltraLight;
     margin: 10px 0;
   }
@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: 425px){
+@media (max-width: 425px){
   .hero {
     // .hero__title 
     &__title {
